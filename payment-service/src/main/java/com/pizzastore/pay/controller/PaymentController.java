@@ -1,0 +1,1 @@
+package com.pizzastore.pay.controller; import org.springframework.web.bind.annotation.*; import java.util.Map; @RestController @RequestMapping("/pay") public class PaymentController { @PostMapping("/process") public Map<String,String> process(@RequestBody Map<String,Object> body){ return Map.of("status","SUCCESS","transactionId","TXN"+System.currentTimeMillis()); } }
