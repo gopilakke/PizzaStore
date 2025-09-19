@@ -1,0 +1,1 @@
+package com.pizzastore.admin.repository; import com.pizzastore.admin.entity.MenuItem; import org.springframework.data.jpa.repository.JpaRepository; public interface MenuItemRepository extends JpaRepository<MenuItem, Long> {}
